@@ -19,10 +19,13 @@ const View: React.FC<Props> = props => {
 }
 
 const Styled = styled(View)`
-  margin: 70px 40px;
+  margin: 70px 10px;
+  @media screen and (min-width: 560px) {
+    margin: 70px 40px;
+  }
   > p {
-    font-size: 7rem;
-    line-height: 7rem;
+    font-size: 8rem;
+    line-height: 8rem;
     cursor: default;
     &.strong {
       font-weight: bold;
