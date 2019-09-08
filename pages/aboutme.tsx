@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import View from '../components/index'
+import View from '../components/aboutme'
 import Header from '../components/global/header'
 import Footer from '../components/global/footer'
 
@@ -21,7 +21,7 @@ class Index extends React.Component<Props> {
           <title>wwww.dev</title>
           <meta name="Description" content="wwww.dev" />
         </Head>
-        <Header />
+        <Header category={'aboutme'} />
         <View />
         <Footer />
       </div>

@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import * as styles from '../components/styles'
+import React from 'react'
 
 export default class MainDocument extends Document {
   static async getInitialProps(ctx) {
@@ -34,13 +34,12 @@ export default class MainDocument extends Document {
           <link
             rel="shortcut icon"
             type="image/x-icon"
-            href="/static/images/favicon.ico"
+            href="/static/images/favicon.png"
           />
-          <link rel="apple-touch-icon" href="/static/images/icon-192x192.png" />
           <meta name="theme-color" content="#ffffff" />
           <meta name="robots" content="index, follow" />
           <link rel="manifest" href="/static/manifest.json" />
-          <link rel="stylesheet" href="/static/styles/reset.css" />
+          <link rel="stylesheet" href="/static/styles/style.css" />
         </Head>
         <body>
           <Main />

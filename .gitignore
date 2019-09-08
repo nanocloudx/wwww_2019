@@ -5,3 +5,5 @@ yarn-debug.log*
 yarn-error.log*
 .next/
 .env
+.idea/
+*.iml

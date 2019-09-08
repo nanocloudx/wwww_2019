@@ -1,26 +1,33 @@
 import React from 'react'
 import App from 'next/app'
-import { createGlobalStyle } from 'styled-components'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faBars,
+  faHeart,
+  faPlaneDeparture
+} from '@fortawesome/free-solid-svg-icons'
+import {
+  faFacebookSquare,
+  faTwitterSquare,
+  faInstagram,
+  faGithubSquare
+} from '@fortawesome/free-brands-svg-icons'
 
-const GlobalStyle = createGlobalStyle`
-  html {
-    font-size: 62.5%;
-  }
-  body {
-    font-size: 100%;
-    font-family: sans-serif;
-    margin: 0 auto;
-  }
-`
+library.add(
+  faBars,
+  faHeart,
+  faPlaneDeparture,
+  faFacebookSquare,
+  faTwitterSquare,
+  faInstagram,
+  faGithubSquare
+)
 
-export default class MainApp extends App {
+class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
-    return (
-      <>
-        <GlobalStyle />
-        <Component {...pageProps} />
-      </>
-    )
+    return <Component {...pageProps} />
   }
 }
+
+export default MyApp
