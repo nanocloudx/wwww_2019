@@ -118,7 +118,7 @@ const View: React.FC<Props> = props => {
 }
 
 const Styled = styled(View)`
-  margin: 0 auto;
+  margin: 50px auto;
   @media screen and (min-width: 560px) {
     width: 560px;
   }

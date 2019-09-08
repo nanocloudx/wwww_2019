@@ -1,6 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import React from 'react'
+import Header from '../components/global/header'
+import Footer from '../components/global/footer'
 
 export default class MainDocument extends Document {
   static async getInitialProps(ctx) {
@@ -42,7 +44,11 @@ export default class MainDocument extends Document {
           <link rel="stylesheet" href="/static/styles/style.css" />
         </Head>
         <body>
-          <Main />
+          <Header />
+          <div style={{ marginLeft: 50 }}>
+            <Main />
+            <Footer />
+          </div>
           <NextScript />
         </body>
       </Html>

@@ -8,7 +8,7 @@ type Props = {
 const View: React.FC<Props> = props => {
   return (
     <div className={props.className}>
-      <p>Hello!</p>
+      <p>Hi!</p>
       <p>You've reached the</p>
       <p className="strong">
         <strong>End of the Internet</strong>.
@@ -19,13 +19,14 @@ const View: React.FC<Props> = props => {
 }
 
 const Styled = styled(View)`
-  margin: 70px 10px;
+  margin: 50px 10px;
   @media screen and (min-width: 560px) {
-    margin: 70px 40px;
+    margin: 50px 40px;
   }
   > p {
-    font-size: 8rem;
-    line-height: 8rem;
+    overflow: hidden;
+    font-size: 7rem;
+    line-height: 7rem;
     cursor: default;
     &.strong {
       font-weight: bold;
