@@ -125,6 +125,7 @@ const Styled = styled(View)`
   @media screen and (min-width: 960px) {
     display: flex;
     width: 960px;
+    margin: 70px auto;
   }
   > .image {
     margin-bottom: 30px;

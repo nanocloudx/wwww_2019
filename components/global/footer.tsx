@@ -14,7 +14,7 @@ const View: React.FC<Props> = props => {
       </p>
       <p>
         <small>
-          Built with <FontAwesomeIcon icon="heart" /> in Akihabara
+          Built with <FontAwesomeIcon icon="bolt" /> in Akihabara Electric Town
         </small>
       </p>
     </footer>
@@ -22,13 +22,14 @@ const View: React.FC<Props> = props => {
 }
 
 const Styled = styled(View)`
-  text-align: center;
   margin: 40px;
   > p {
+    text-align: center;
     > small {
       font-size: 1.2rem;
       > svg {
         height: 1.2rem;
+        color: #ffb000;
       }
     }
   }

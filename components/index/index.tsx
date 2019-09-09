@@ -21,7 +21,7 @@ const View: React.FC<Props> = props => {
 const Styled = styled(View)`
   margin: 50px 10px;
   @media screen and (min-width: 560px) {
-    margin: 50px 40px;
+    margin: 70px 40px;
   }
   > p {
     overflow: hidden;

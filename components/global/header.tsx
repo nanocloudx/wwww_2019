@@ -11,7 +11,11 @@ const View: React.FC<Props> = props => {
   return (
     <header className={props.className}>
       <div className="menu">
-        <h1>wwww.dev</h1>
+        <h1>
+          <Link href="/">
+            <a>wwww.dev</a>
+          </Link>
+        </h1>
         <ul>
           <li>
             <Link href="/">
@@ -47,12 +51,17 @@ const Styled = styled(View)`
     line-height: 50px;
     padding: 0 10px;
     font-weight: bold;
+    font-size: 1.8rem;
     display: flex;
     > h1 {
       &:before {
         content: '>_';
         padding: 0 10px;
         color: #aaaaaa;
+      }
+      > a {
+        color: inherit;
+        text-decoration: none;
       }
     }
     > ul {
