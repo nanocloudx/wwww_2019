@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Anchor from '../../anchor'
+import Anchor from '../../common/anchor'
 
 const Component: React.FC = props => {
   return (
@@ -11,15 +11,14 @@ const Component: React.FC = props => {
 }
 
 const Title = styled.h1`
+  display: flex;
   font-weight: bold;
   font-size: 1.8rem;
-  line-height: 1.8rem;
-  padding: 1.6rem 0;
-  color: #ffffff;
-  &:before {
+  line-height: 5rem;
+  &::before {
     content: '>_';
-    padding: 0 10px;
     color: #aaaaaa;
+    padding: 15px 0;
   }
 `
 

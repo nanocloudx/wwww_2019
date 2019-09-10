@@ -1,8 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 import View from '../components/about'
-import Header from '../components/global/header'
-import Footer from '../components/global/footer'
 
 type Props = {
   title: string

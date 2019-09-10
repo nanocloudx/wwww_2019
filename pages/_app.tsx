@@ -8,8 +8,8 @@ import {
   faInstagram,
   faGithubSquare
 } from '@fortawesome/free-brands-svg-icons'
-import Header from '../components/global/header'
-import Footer from '../components/global/footer'
+import Header from '../components/template/header'
+import Footer from '../components/template/footer'
 
 library.add(
   faBolt,

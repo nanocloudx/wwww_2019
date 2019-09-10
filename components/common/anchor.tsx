@@ -16,9 +16,7 @@ const Component: React.FC<Props> = props => {
 
 const Anchor = styled.a`
   cursor: pointer;
-  text-decoration: inherit;
-  color: inherit;
-  padding: inherit;
+  display: block;
 `
 
 export default Component
