@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
+import Title from './header/title'
 
 type Props = {
   className?: string
@@ -11,11 +12,7 @@ const View: React.FC<Props> = props => {
   return (
     <header className={props.className}>
       <div className="menu">
-        <h1>
-          <Link href="/">
-            <a>wwww.dev</a>
-          </Link>
-        </h1>
+        <Title />
         <ul>
           <li>
             <Link href="/">
@@ -53,17 +50,6 @@ const Styled = styled(View)`
     font-weight: bold;
     font-size: 1.8rem;
     display: flex;
-    > h1 {
-      &:before {
-        content: '>_';
-        padding: 0 10px;
-        color: #aaaaaa;
-      }
-      > a {
-        color: inherit;
-        text-decoration: none;
-      }
-    }
     > ul {
       display: flex;
       > li {
