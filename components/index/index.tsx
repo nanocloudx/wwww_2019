@@ -11,7 +11,7 @@ const Component: React.FC = props => {
 }
 
 const View = styled.div`
-  padding: 40px;
+  padding: 20px;
 `
 
 export default Component

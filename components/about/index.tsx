@@ -1,16 +1,16 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import Wrapper from '../common/wrapper'
 import Images from './image'
 import Names from './names'
 import Socials from './socials'
 import Works from './works'
 import Likes from './likes'
 import Contacts from './contacts'
-import {HEADER_WIDTH, MEDIA_DESKTOP_MIN, MEDIA_TABLET_MIN} from '../common/constants'
 
 const Component: React.FC = props => {
   return (
-    <View>
+    <Wrapper>
       <Column>
         <Images />
       </Column>
@@ -21,17 +21,12 @@ const Component: React.FC = props => {
         <Likes />
         <Contacts />
       </Column>
-    </View>
+    </Wrapper>
   )
 }
 
-const View = styled.div`
-  margin: 50px auto;
-  background-color: #f00;
-`
-
 const Column = styled.div`
-  margin: 0 20px;
+  //margin: 0 20px;
 `
 
 export default Component

@@ -10,16 +10,15 @@ const Component: React.FC = props => {
           <dt>Travel</dt>
           <dd>Flew 66,209+ miles</dd>
           <dd className="note">
-            Went: California, NewYork, Singapole, Melbourne, Venezia,
-            Manila, Macau
+            Went: California, NewYork, Singapole, Melbourne, Venezia, Manila,
+            Macau
           </dd>
         </div>
         <div>
           <dt>Anime</dt>
           <dd>I like almost anything!</dd>
           <dd className="note">
-            Love: The Melancholy of Haruhi Suzumiya, Sound! Euphonium,
-            etc...
+            Love: The Melancholy of Haruhi Suzumiya, Sound! Euphonium, etc...
           </dd>
         </div>
         <div>
@@ -33,8 +32,7 @@ const Component: React.FC = props => {
           <dt>Poker</dt>
           <dd>IT Poker Committee (ITPC) Organizer</dd>
           <dd className="note">
-            "ITPC" is a poker tournament co-organized by IT companies in
-            Tokyo.
+            "ITPC" is a poker tournament co-organized by IT companies in Tokyo.
           </dd>
         </div>
         <div>

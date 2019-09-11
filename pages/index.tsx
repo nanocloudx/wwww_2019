@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import Template from '../components/common/template'
 import View from '../components/index'
 
 type Props = {
@@ -9,21 +8,17 @@ type Props = {
 
 class Index extends React.Component<Props> {
   static async getInitialProps() {
-    return {
-      title: 'index'
-    }
+    return {}
   }
   render() {
     return (
-      <div>
+      <>
         <Head>
           <title>wwww.dev</title>
           <meta name="Description" content="wwww.dev" />
         </Head>
-        <Template>
-          <View />
-        </Template>
-      </div>
+        <View />
+      </>
     )
   }
 }

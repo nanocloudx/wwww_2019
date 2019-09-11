@@ -15,11 +15,8 @@ const Component: React.FC = props => {
 }
 
 const Header = styled.header`
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
   width: 50px;
+  height: 100vh;
   background-color: #222222;
   color: #ffffff;
 `

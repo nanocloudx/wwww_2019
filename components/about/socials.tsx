@@ -1,22 +1,14 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Component: React.FC = props => {
   return (
     <div>
-      <a
-        href="https://github.com/nanocloudx"
-        target="_blank"
-        rel="noopener"
-      >
+      <a href="https://github.com/nanocloudx" target="_blank" rel="noopener">
         <FontAwesomeIcon icon={['fab', 'github-square']} />
       </a>
-      <a
-        href="https://twitter.com/nanocloudx"
-        target="_blank"
-        rel="noopener"
-      >
+      <a href="https://twitter.com/nanocloudx" target="_blank" rel="noopener">
         <FontAwesomeIcon icon={['fab', 'twitter-square']} />
       </a>
       <a
