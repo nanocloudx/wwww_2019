@@ -36,8 +36,6 @@ export default class MainDocument extends Document {
             type="image/x-icon"
             href="/static/images/favicon.png"
           />
-          <meta name="theme-color" content="#ffffff" />
-          <meta name="robots" content="index, follow" />
           <link rel="manifest" href="/static/manifest.json" />
           <link rel="stylesheet" href="/static/styles/style.css" />
         </Head>

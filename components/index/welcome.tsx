@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Strong from '../../common/strong'
+import Strong from '../common/strong'
 
 const Component: React.FC = props => {
   return (

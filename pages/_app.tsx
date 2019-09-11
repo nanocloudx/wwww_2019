@@ -8,8 +8,6 @@ import {
   faInstagram,
   faGithubSquare
 } from '@fortawesome/free-brands-svg-icons'
-import Header from '../components/common/header'
-import Footer from '../components/common/footer'
 
 library.add(
   faBolt,
@@ -23,13 +21,7 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
     return (
-      <>
-        <Header />
-        <div style={{ marginLeft: 50 }}>
-          <Component {...pageProps} />
-          <Footer />
-        </div>
-      </>
+      <Component {...pageProps} />
     )
   }
 }

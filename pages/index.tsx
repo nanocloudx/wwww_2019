@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Template from '../components/common/template'
 import View from '../components/index'
 
 type Props = {
@@ -19,7 +20,9 @@ class Index extends React.Component<Props> {
           <title>wwww.dev</title>
           <meta name="Description" content="wwww.dev" />
         </Head>
-        <View />
+        <Template>
+          <View />
+        </Template>
       </div>
     )
   }

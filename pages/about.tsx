@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import View from '../components/about'
+import Template from '../components/common/template'
 
 type Props = {
   title: string
@@ -19,7 +20,9 @@ class Index extends React.Component<Props> {
           <title>wwww.dev</title>
           <meta name="Description" content="wwww.dev" />
         </Head>
-        <View />
+        <Template>
+          <View />
+        </Template>
       </div>
     )
   }
