@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Anchor from '../../common/anchor'
+import Anchor from '../anchor'
 
 const Component: React.FC = props => {
   return (
