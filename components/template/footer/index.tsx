@@ -23,9 +23,9 @@ const Component: React.FC = props => {
 
 const Footer = styled.footer`
   font-size: 1.1rem;
-  margin: 40px;
+  margin: 30px;
   text-align: center;
-  color: #777777;
+  color: #666666;
 `
 
 const Bolt = styled.span`

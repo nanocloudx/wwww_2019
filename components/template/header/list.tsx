@@ -6,10 +6,10 @@ const Component: React.FC = props => {
   return (
     <List>
       <Item>
-        <Anchor href="/">index</Anchor>
+        <Anchor href="/" label="index">index</Anchor>
       </Item>
       <Item>
-        <Anchor href="/about">about</Anchor>
+        <Anchor href="/about" label="about">about</Anchor>
       </Item>
     </List>
   )
