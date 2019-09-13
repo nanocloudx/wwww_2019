@@ -7,22 +7,38 @@ const Component: React.FC = props => {
   return (
     <Socials>
       <Icons>
-        <Anchor href="https://github.com/nanocloudx" isExternal={true} label="Github">
+        <Anchor
+          href="https://github.com/nanocloudx"
+          isExternal={true}
+          label="Github"
+        >
           <FontAwesomeIcon icon={['fab', 'github-square']} />
         </Anchor>
       </Icons>
       <Icons>
-        <Anchor href="https://twitter.com/nanocloudx" isExternal={true} label="Twitter">
+        <Anchor
+          href="https://twitter.com/nanocloudx"
+          isExternal={true}
+          label="Twitter"
+        >
           <FontAwesomeIcon icon={['fab', 'twitter-square']} />
         </Anchor>
       </Icons>
       <Icons>
-        <Anchor href="https://www.facebook.com/nanocloudx" isExternal={true} label="Facebook">
+        <Anchor
+          href="https://www.facebook.com/nanocloudx"
+          isExternal={true}
+          label="Facebook"
+        >
           <FontAwesomeIcon icon={['fab', 'facebook-square']} />
         </Anchor>
       </Icons>
       <Icons>
-        <Anchor href="https://www.instagram.com/nanocloudx" isExternal={true} label="Instagram">
+        <Anchor
+          href="https://www.instagram.com/nanocloudx"
+          isExternal={true}
+          label="Instagram"
+        >
           <FontAwesomeIcon icon={['fab', 'instagram']} />
         </Anchor>
       </Icons>

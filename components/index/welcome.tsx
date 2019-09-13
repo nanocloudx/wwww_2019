@@ -1,6 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import Strong from '../common/strong'
+import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../common/constants'
 
 const Component: React.FC = props => {
   return (
@@ -16,16 +17,16 @@ const Component: React.FC = props => {
 }
 
 const Message = styled.p`
-  padding: 20px;
+  padding: 10px;
   cursor: default;
   font-size: 7rem;
   line-height: 7rem;
-  @media screen and (min-width: 560px) {
+  @media screen and (min-width: ${MEDIA_QUERY_TABLET}px) {
     padding: 30px;
     font-size: 9rem;
     line-height: 9rem;
   }
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
     padding: 40px;
     font-size: 11rem;
     line-height: 11rem;

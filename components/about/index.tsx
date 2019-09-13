@@ -13,9 +13,9 @@ import { MEDIA_QUERY_TABLET } from '../common/constants'
 const Component: React.FC = props => {
   return (
     <Wrapper>
-      <ImageWrapper>
+      <div>
         <Images />
-      </ImageWrapper>
+      </div>
       <div>
         <Section>
           <Column>
@@ -31,9 +31,6 @@ const Component: React.FC = props => {
   )
 }
 
-const ImageWrapper = styled.div`
-  margin-right: 70px;
-`
 const Column = styled.div`
   @media screen and (min-width: ${MEDIA_QUERY_TABLET}px) {
     display: flex;
