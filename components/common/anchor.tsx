@@ -11,7 +11,12 @@ type Props = {
 const Component: React.FC<Props> = props => {
   if (props.isExternal) {
     return (
-      <Anchor href={props.href} target="_blank" rel="noopener" aria-label={props.label}>
+      <Anchor
+        href={props.href}
+        target="_blank"
+        rel="noopener"
+        aria-label={props.label}
+      >
         {props.children}
       </Anchor>
     )
