@@ -5,7 +5,7 @@ import Anchor from '../../common/anchor'
 const Component: React.FC = props => {
   return (
     <Title>
-      <Anchor href="/">wwww.dev</Anchor>
+      <Anchor href="/" label="wwww.dev">wwww.dev</Anchor>
     </Title>
   )
 }

@@ -4,20 +4,21 @@ import styled from 'styled-components'
 
 type Props = {
   href: string
+  label: string
   isExternal?: boolean
 }
 
 const Component: React.FC<Props> = props => {
   if (props.isExternal) {
     return (
-      <Anchor href={props.href} target="_blank" rel="noopener">
+      <Anchor href={props.href} target="_blank" rel="noopener" aria-label={props.label}>
         {props.children}
       </Anchor>
     )
   }
   return (
     <Link href={props.href}>
-      <Anchor>{props.children}</Anchor>
+      <Anchor aria-label={props.label}>{props.children}</Anchor>
     </Link>
   )
 }
