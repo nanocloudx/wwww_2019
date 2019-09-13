@@ -1,15 +1,13 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Welcome from './welcome'
 
 const Component: React.FC = props => {
-  return (
-    <View>
-      <Welcome />
-    </View>
-  )
+  return <Note>{props.children}</Note>
 }
 
-const View = styled.div``
+const Note = styled.span`
+  font-size: 1.4rem;
+  color: #666666;
+`
 
 export default Component

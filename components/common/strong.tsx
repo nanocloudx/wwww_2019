@@ -1,15 +1,12 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Welcome from './welcome'
 
 const Component: React.FC = props => {
-  return (
-    <View>
-      <Welcome />
-    </View>
-  )
+  return <Strong>{props.children}</Strong>
 }
 
-const View = styled.div``
+const Strong = styled.strong`
+  font-weight: bold;
+`
 
 export default Component

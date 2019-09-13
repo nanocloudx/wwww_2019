@@ -1,15 +1,12 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Welcome from './welcome'
 
 const Component: React.FC = props => {
-  return (
-    <View>
-      <Welcome />
-    </View>
-  )
+  return <Section>{props.children}</Section>
 }
 
-const View = styled.div``
+const Section = styled.section`
+  margin-bottom: 30px;
+`
 
 export default Component

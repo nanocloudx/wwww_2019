@@ -8,19 +8,17 @@ type Props = {
 
 class Index extends React.Component<Props> {
   static async getInitialProps() {
-    return {
-      title: 'index'
-    }
+    return {}
   }
   render() {
     return (
-      <div>
+      <>
         <Head>
           <title>wwww.dev</title>
           <meta name="Description" content="wwww.dev" />
         </Head>
         <View />
-      </div>
+      </>
     )
   }
 }
