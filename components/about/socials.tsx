@@ -1,36 +1,43 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Anchor from '../common/anchor'
 
 const Component: React.FC = props => {
   return (
-    <div>
-      <a href="https://github.com/nanocloudx" target="_blank" rel="noopener">
-        <FontAwesomeIcon icon={['fab', 'github-square']} />
-      </a>
-      <a href="https://twitter.com/nanocloudx" target="_blank" rel="noopener">
-        <FontAwesomeIcon icon={['fab', 'twitter-square']} />
-      </a>
-      <a
-        href="https://www.facebook.com/nanocloudx"
-        target="_blank"
-        rel="noopener"
-      >
-        <FontAwesomeIcon icon={['fab', 'facebook-square']} />
-      </a>
-      <a
-        href="https://www.instagram.com/nanocloudx"
-        target="_blank"
-        rel="noopener"
-      >
-        <FontAwesomeIcon icon={['fab', 'instagram']} />
-      </a>
-    </div>
+    <Socials>
+      <Icons>
+        <Anchor href="https://github.com/nanocloudx" isExternal={true}>
+          <FontAwesomeIcon icon={['fab', 'github-square']} />
+        </Anchor>
+      </Icons>
+      <Icons>
+        <Anchor href="https://twitter.com/nanocloudx" isExternal={true}>
+          <FontAwesomeIcon icon={['fab', 'twitter-square']} />
+        </Anchor>
+      </Icons>
+      <Icons>
+        <Anchor href="https://www.facebook.com/nanocloudx" isExternal={true}>
+          <FontAwesomeIcon icon={['fab', 'facebook-square']} />
+        </Anchor>
+      </Icons>
+      <Icons>
+        <Anchor href="https://www.instagram.com/nanocloudx" isExternal={true}>
+          <FontAwesomeIcon icon={['fab', 'instagram']} />
+        </Anchor>
+      </Icons>
+    </Socials>
   )
 }
 
-// const Example = styled.div`
-//
-// `
+const Socials = styled.div`
+  display: flex;
+`
+const Icons = styled.div`
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  margin-top: 10px;
+  margin-right: 10px;
+`
 
 export default Component

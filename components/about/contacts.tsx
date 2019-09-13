@@ -1,17 +1,20 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import Section from '../common/section'
 
 const Component: React.FC = props => {
   return (
-    <section className="contacts">
-      <h3>Contacts</h3>
+    <Section>
+      <Title>Contacts</Title>
       <p>nanocloudx@gmail.com or Twitter DM</p>
-    </section>
+    </Section>
   )
 }
 
-// const Example = styled.div`
-//
-// `
+const Title = styled.h3`
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+`
 
 export default Component

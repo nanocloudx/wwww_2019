@@ -7,7 +7,7 @@ const Component: React.FC = props => {
 
 const Image = styled.img`
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   max-width: 100%;
   width: 300px;
 `

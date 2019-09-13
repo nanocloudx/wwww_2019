@@ -4,7 +4,8 @@ import {
   HEADER_WIDTH,
   MEDIA_TABLET_MIN,
   MEDIA_DESKTOP_MIN,
-  SCROLLBAR_WIDTH
+  MEDIA_QUERY_DESKTOP,
+  MEDIA_QUERY_TABLET
 } from './constants'
 
 const Component: React.FC = props => {
@@ -14,13 +15,13 @@ const Component: React.FC = props => {
 const Wrapper = styled.div`
   margin: 0 auto;
   padding: 50px 20px;
-  @media screen and (min-width: ${MEDIA_TABLET_MIN + SCROLLBAR_WIDTH}px) {
+  @media screen and (min-width: ${MEDIA_QUERY_TABLET}px) {
     width: calc(${MEDIA_TABLET_MIN}px - ${HEADER_WIDTH}px);
   }
-  @media screen and (min-width: ${MEDIA_DESKTOP_MIN + SCROLLBAR_WIDTH}px) {
+  @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
     display: flex;
     width: calc(${MEDIA_DESKTOP_MIN}px - ${HEADER_WIDTH}px);
-    padding: 70px 20px;
+    padding: 70px 20px 50px;
   }
 `
 

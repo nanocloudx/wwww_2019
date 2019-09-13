@@ -1,57 +1,84 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import Section from '../common/section'
+import Note from '../common/note'
 
 const Component: React.FC = props => {
   return (
-    <section>
-      <h3>Likes</h3>
+    <Section>
+      <Title>Likes</Title>
       <dl>
-        <div>
+        <LikeItem>
           <dt>Travel</dt>
           <dd>Flew 66,209+ miles</dd>
           <dd className="note">
-            Went: California, NewYork, Singapole, Melbourne, Venezia, Manila,
-            Macau
+            <Note>
+              Went: California, NewYork, Singapole, Melbourne, Venezia, Manila,
+              Macau
+            </Note>
           </dd>
-        </div>
-        <div>
+        </LikeItem>
+        <LikeItem>
           <dt>Anime</dt>
           <dd>I like almost anything!</dd>
           <dd className="note">
-            Love: The Melancholy of Haruhi Suzumiya, Sound! Euphonium, etc...
+            <Note>
+              Love: The Melancholy of Haruhi Suzumiya, Sound! Euphonium, etc...
+            </Note>
           </dd>
-        </div>
-        <div>
+        </LikeItem>
+        <LikeItem>
           <dt>Videography</dt>
           <dd>Graduated from school of shooting film</dd>
           <dd className="note">
-            Use: Sony alpha 7III / Vario-Tessar T* FE 16-35mm F4 ZA OSS
+            <Note>
+              Use: Sony alpha 7III / Vario-Tessar T* FE 16-35mm F4 ZA OSS
+            </Note>
           </dd>
-        </div>
-        <div>
+        </LikeItem>
+        <LikeItem>
           <dt>Poker</dt>
           <dd>IT Poker Committee (ITPC) Organizer</dd>
           <dd className="note">
-            "ITPC" is a poker tournament co-organized by IT companies in Tokyo.
+            <Note>
+              "ITPC" is a poker tournament co-organized by IT companies in
+              Tokyo.
+            </Note>
           </dd>
-        </div>
-        <div>
+        </LikeItem>
+        <LikeItem>
           <dt>Golf</dt>
           <dd>Score 180+</dd>
-          <dd className="note">Terribly bad... but I like it!</dd>
-        </div>
-        <div>
+          <dd className="note">
+            <Note>Terribly bad... but I like it!</Note>
+          </dd>
+        </LikeItem>
+        <LikeItem>
           <dt>Niconico</dt>
           <dd>Starring on the Niconico-Chokaigi official opening</dd>
-          <dd className="note">"Mizuiro" from Nakasone-off</dd>
-        </div>
+          <dd className="note">
+            <Note>"Mizuiro" from Nakasone-off</Note>
+          </dd>
+        </LikeItem>
       </dl>
-    </section>
+    </Section>
   )
 }
 
-// const Example = styled.div`
-//
-// `
+const Title = styled.h3`
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+`
+
+const LikeItem = styled.div`
+  margin-bottom: 10px;
+  > dt {
+    font-weight: bold;
+  }
+  > dd.note {
+    font-size: 1.4rem;
+  }
+`
 
 export default Component

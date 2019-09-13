@@ -4,14 +4,20 @@ import styled from 'styled-components'
 const Component: React.FC = props => {
   return (
     <div>
-      <h2>Syuhei Kobayashi</h2>
-      <p>(なのくろ / @nanocloudx)</p>
+      <Name>Syuhei Kobayashi</Name>
+      <AlternateName>(なのくろ / @nanocloudx)</AlternateName>
     </div>
   )
 }
 
-// const Example = styled.div`
-//
-// `
+const Name = styled.h2`
+  font-size: 2.4rem;
+  font-weight: bold;
+`
+
+const AlternateName = styled.p`
+  font-size: 1.8rem;
+  margin-right: 15px;
+`
 
 export default Component
