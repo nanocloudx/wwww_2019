@@ -3,10 +3,10 @@ import Head from 'next/head'
 import View from '../components/about'
 
 type Props = {
-  title: string
+  //
 }
 
-class Index extends React.Component<Props> {
+class Page extends React.Component<Props> {
   static async getInitialProps() {
     return {}
   }
@@ -23,4 +23,4 @@ class Index extends React.Component<Props> {
   }
 }
 
-export default Index
+export default Page

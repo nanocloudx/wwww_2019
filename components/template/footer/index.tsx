@@ -30,6 +30,9 @@ const Footer = styled.footer`
 
 const Bolt = styled.span`
   color: #ffb000;
+  > svg {
+    font-size: 1.1rem;
+  }
 `
 
 export default Component
