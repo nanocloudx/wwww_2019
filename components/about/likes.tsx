@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Section from '../common/section'
-import Note from '../common/note'
+import Section from '../parts/section'
+import Note from '../parts/note'
 
 const Component: React.FC = props => {
   return (

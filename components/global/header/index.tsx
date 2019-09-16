@@ -5,16 +5,19 @@ import List from './list'
 import {
   HEADER_LARGE_WIDTH,
   HEADER_SMALL_WIDTH,
-  MEDIA_QUERY_DESKTOP,
-  MEDIA_QUERY_TABLET
-} from '../../common/constants'
+  MEDIA_QUERY_DESKTOP
+} from '../../parts/constants'
 
-const Component: React.FC = props => {
+type Props = {
+  pathname: string
+}
+
+const Component: React.FC<Props> = props => {
   return (
     <Header>
       <Navigation>
         <Title />
-        <List />
+        <List pathname={props.pathname} />
       </Navigation>
     </Header>
   )

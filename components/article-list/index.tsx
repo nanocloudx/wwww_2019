@@ -1,7 +1,6 @@
 import * as React from 'react'
-import styled from 'styled-components'
-import Wrapper from '../common/wrapper'
-import Anchor from '../common/anchor'
+import Wrapper from '../parts/template/wrapper'
+import Anchor from '../parts/anchor'
 import { Article } from '../../interfaces/article'
 
 type Props = {

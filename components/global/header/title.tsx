@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Anchor from '../../common/anchor'
-import { MEDIA_QUERY_DESKTOP } from '../../common/constants'
+import Anchor from '../../parts/anchor'
+import { MEDIA_QUERY_DESKTOP } from '../../parts/constants'
 
 const Component: React.FC = props => {
   return (

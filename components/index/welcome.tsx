@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Strong from '../common/strong'
-import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../common/constants'
+import Strong from '../parts/strong'
+import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../parts/constants'
 
 const Component: React.FC = props => {
   return (

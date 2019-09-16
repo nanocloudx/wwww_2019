@@ -1,32 +1,35 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Wrapper from '../common/wrapper'
-import Section from '../common/section'
+import Wrapper from '../parts/template/wrapper'
+import TwoColumn from '../parts/template/two-column'
+import Section from '../parts/section'
 import Images from './image'
 import Names from './names'
 import Socials from './socials'
 import Works from './works'
 import Likes from './likes'
 import Contacts from './contacts'
-import { MEDIA_QUERY_TABLET } from '../common/constants'
+import { MEDIA_QUERY_TABLET } from '../parts/constants'
 
 const Component: React.FC = props => {
   return (
     <Wrapper>
-      <div>
-        <Images />
-      </div>
-      <div>
-        <Section>
-          <Column>
-            <Names />
-            <Socials />
-          </Column>
-          <Works />
-        </Section>
-        <Likes />
-        <Contacts />
-      </div>
+      <TwoColumn>
+        <div>
+          <Images />
+        </div>
+        <div>
+          <Section>
+            <Column>
+              <Names />
+              <Socials />
+            </Column>
+            <Works />
+          </Section>
+          <Likes />
+          <Contacts />
+        </div>
+      </TwoColumn>
     </Wrapper>
   )
 }

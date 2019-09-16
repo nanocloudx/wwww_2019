@@ -5,19 +5,18 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBolt } from '@fortawesome/free-solid-svg-icons'
 import {
   faFacebookSquare,
-  faTwitterSquare,
+  faGithubSquare,
   faInstagram,
-  faGithubSquare
+  faTwitterSquare
 } from '@fortawesome/free-brands-svg-icons'
 import {
   HEADER_LARGE_WIDTH,
   HEADER_SMALL_WIDTH,
-  MEDIA_QUERY_DESKTOP,
-  MEDIA_QUERY_TABLET
-} from '../components/common/constants'
-import Header from '../components/template/header'
-import Footer from '../components/template/footer'
-import Category from '../components/template/category'
+  MEDIA_QUERY_DESKTOP
+} from '../components/parts/constants'
+import Header from '../components/global/header'
+import Footer from '../components/global/footer'
+import Category from '../components/global/category'
 
 library.add(
   faBolt,
@@ -33,7 +32,7 @@ class MyApp extends App {
     return (
       <>
         <Side>
-          <Header />
+          <Header pathname={router.pathname} />
         </Side>
         <Main>
           <Category pathname={router.pathname} />

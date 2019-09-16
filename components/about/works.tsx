@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Note from '../common/note'
+import Note from '../parts/note'
 
 const Component: React.FC = props => {
   return (

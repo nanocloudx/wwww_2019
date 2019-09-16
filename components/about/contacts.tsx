@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Section from '../common/section'
+import Section from '../parts/section'
 
 const Component: React.FC = props => {
   return (
