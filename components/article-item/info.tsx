@@ -13,8 +13,8 @@ const Component: React.FC<Props> = props => {
   return (
     <Info>
       <Tags>
-        {props.tags.map(tag => (
-          <Tag>{tag}</Tag>
+        {props.tags.map((tag, i) => (
+          <Tag key={i}>{tag}</Tag>
         ))}
       </Tags>
       <Meta>LastUpdate {props.date}</Meta>

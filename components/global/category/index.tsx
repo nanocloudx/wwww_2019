@@ -7,9 +7,9 @@ type Props = {
 }
 
 const Component: React.FC<Props> = props => {
-  // TODO: サブカテゴリを表示する
-  const category = props.pathname.split('/')[1] || ''
-  const subCategory = props.pathname.split('/')[2] || ''
+  const paths = props.pathname.split('/')
+  const category = paths[1] || ''
+  const subCategory = paths[2] || ''
 
   if (!category) {
     return <></>

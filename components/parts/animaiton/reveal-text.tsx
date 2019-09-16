@@ -5,7 +5,8 @@ const Component: React.FC = props => {
   return <RevealText>{props.children}</RevealText>
 }
 
-const RevealText = styled.p`
+const RevealText = styled.span`
+  display: inline-block;
   animation-delay: 0.5s;
   animation-iteration-count: 1;
   animation-duration: 0.8s;

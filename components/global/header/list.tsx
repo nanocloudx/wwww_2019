@@ -8,7 +8,8 @@ type Props = {
 }
 
 const Component: React.FC<Props> = props => {
-  const category = props.pathname.split('/')[1] || ''
+  const paths = props.pathname.split('/')
+  const category = paths[1] || ''
   return (
     <List>
       <Item className={category === 'articles' && 'active'}>

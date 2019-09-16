@@ -13,6 +13,7 @@ const Component: React.FC<Props> = props => {
       <div>
         {props.articles.map(article => (
           <Anchor
+            key={article.id}
             href={`/articles/${article.category}/${article.id}`}
             label={article.title}
           >

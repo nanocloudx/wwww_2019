@@ -23,14 +23,14 @@ library.add(faFacebookSquare, faTwitterSquare, faInstagram, faGithubSquare)
 class MyApp extends App {
   render() {
     const { Component, pageProps, router } = this.props
-    console.log(router)
+    const pathname = router.asPath.replace(/(\?|\#).*$/, '')
     return (
       <>
         <Side>
-          <Header pathname={router.asPath} />
+          <Header pathname={pathname} />
         </Side>
         <Main>
-          <Category pathname={router.asPath} />
+          <Category pathname={pathname} />
           <Component {...pageProps} />
           <Footer />
         </Main>
