@@ -11,7 +11,7 @@ const Component: React.FC = props => {
   )
 }
 
-const Title = styled.h2`
+const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: bold;
   margin: 60px 0;

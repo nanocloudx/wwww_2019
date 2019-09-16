@@ -18,6 +18,7 @@ const Body = styled.div`
   h1,
   h2,
   h3,
+  h4,
   p,
   pre,
   code,
@@ -27,27 +28,43 @@ const Body = styled.div`
   }
   h1,
   h2,
-  h3 {
+  h3,
+  h4,
+  strong,
+  a {
     font-weight: bold;
   }
   h1 {
-    font-size: 3rem;
+    background-color: #ff0000;
   }
   h2 {
     font-size: 2.6rem;
   }
   h3 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 2rem;
   }
   em {
     font-style: italic;
   }
-  strong {
-    font-weight: bold;
-  }
   pre,
   code {
     font-family: monospace, sans-serif;
+    background-color: #333333;
+    color: #ffffff;
+  }
+  code {
+    margin: 0 4px;
+    padding: 2px 6px;
+  }
+  pre {
+    padding: 20px;
+    > code {
+      margin: 0;
+      padding: 0;
+    }
   }
   ul {
     > li {
@@ -58,9 +75,21 @@ const Body = styled.div`
   blockquote {
     padding: 20px;
     background-color: #f0f0f0;
+    border-left: 5px solid #666666;
     > p {
       margin: 0;
     }
+  }
+  a {
+    color: #1e50a2;
+    text-decoration: none;
+  }
+  hr {
+    margin: 50px auto;
+    height: 2px;
+    background-color: #dddddd;
+    width: 80%;
+    border: none;
   }
 `
 
