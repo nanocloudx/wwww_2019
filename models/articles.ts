@@ -33,6 +33,8 @@ export function getArticleById(id: string): Promise<Article> {
 }
 
 const dummyMarkdown = `
+![large image](https://dummyimage.com/1280x800/87cefa/fff.jpg&text=exampleImage)
+
 ## これはテスト記事です
 
 そのころわたくしは、モリーオ市の博物局に勤めて居りました。
@@ -68,4 +70,7 @@ const dummyMarkdown = `
 hello world!
 foo bar baz
 \`\`\`
+
+![small image](/static/images/nanocloudx.jpg)
+
 `

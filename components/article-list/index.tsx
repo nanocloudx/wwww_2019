@@ -20,6 +20,11 @@ const Component: React.FC<Props> = props => {
             <div>
               <h3>{article.title}</h3>
               <p>{article.date}</p>
+              <p>
+                {article.tags.map((tag, i) => (
+                  <span key={i}>{tag},</span>
+                ))}
+              </p>
             </div>
           </Anchor>
         ))}

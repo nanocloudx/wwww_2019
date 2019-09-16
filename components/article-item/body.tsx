@@ -23,7 +23,8 @@ const Body = styled.div`
   pre,
   code,
   ul,
-  blockquote {
+  blockquote,
+  img {
     margin-bottom: 20px;
   }
   h1,
@@ -90,6 +91,11 @@ const Body = styled.div`
     background-color: #dddddd;
     width: 80%;
     border: none;
+  }
+  img {
+    max-width: calc(100% + 40px);
+    margin: 20px -20px;
+    display: block;
   }
 `
 
