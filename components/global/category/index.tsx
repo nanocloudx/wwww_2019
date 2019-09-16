@@ -41,6 +41,7 @@ function getCategoryName(str) {
 }
 
 const Category = styled.h2`
+  cursor: default;
   display: inline-block;
   font-size: 2.4rem;
   font-weight: bold;
@@ -49,7 +50,7 @@ const Category = styled.h2`
   padding-bottom: 5px;
   border-bottom: 1px solid #aaaaaa;
   &::before {
-    content: '>_';
+    content: '/';
     padding-right: 5px;
     font-size: 1.8rem;
     color: #555555;
@@ -63,7 +64,7 @@ const SubCategory = styled.span`
   font-size: 1.8rem;
   color: #555555;
   &::before {
-    content: '+';
+    content: '/';
     padding: 0 5px;
   }
 `
