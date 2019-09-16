@@ -2,6 +2,12 @@ import * as React from 'react'
 import styled from 'styled-components'
 import Title from './title'
 import List from './list'
+import {
+  HEADER_LARGE_WIDTH,
+  HEADER_SMALL_WIDTH,
+  MEDIA_QUERY_DESKTOP,
+  MEDIA_QUERY_TABLET
+} from '../../common/constants'
 
 const Component: React.FC = props => {
   return (
@@ -15,10 +21,13 @@ const Component: React.FC = props => {
 }
 
 const Header = styled.header`
-  width: 50px;
+  width: ${HEADER_SMALL_WIDTH}px;
   height: 100vh;
   background-color: #222222;
   color: #ffffff;
+  @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
+    width: ${HEADER_LARGE_WIDTH}px;
+  }
 `
 
 const Navigation = styled.nav`

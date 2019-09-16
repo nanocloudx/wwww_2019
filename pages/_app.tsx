@@ -9,7 +9,12 @@ import {
   faInstagram,
   faGithubSquare
 } from '@fortawesome/free-brands-svg-icons'
-import { HEADER_WIDTH } from '../components/common/constants'
+import {
+  HEADER_LARGE_WIDTH,
+  HEADER_SMALL_WIDTH,
+  MEDIA_QUERY_DESKTOP,
+  MEDIA_QUERY_TABLET
+} from '../components/common/constants'
 import Header from '../components/template/header'
 import Footer from '../components/template/footer'
 
@@ -43,8 +48,12 @@ const Side = styled.div`
 `
 
 const Main = styled.div`
-  margin-left: ${HEADER_WIDTH}px;
-  width: calc(100% - ${HEADER_WIDTH}px);
+  margin-left: ${HEADER_SMALL_WIDTH}px;
+  width: calc(100% - ${HEADER_SMALL_WIDTH}px);
+  @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
+    margin-left: ${HEADER_LARGE_WIDTH}px;
+    width: calc(100% - ${HEADER_LARGE_WIDTH}px);
+  }
 `
 
 export default MyApp

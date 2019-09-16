@@ -1,5 +1,6 @@
 const SCROLLBAR_WIDTH = 15
-export const HEADER_WIDTH = 50
+export const HEADER_SMALL_WIDTH = 50
+export const HEADER_LARGE_WIDTH = 70
 export const MEDIA_TABLET_MIN = 600
 export const MEDIA_DESKTOP_MIN = 1000
 
