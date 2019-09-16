@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Component: React.FC = props => {
   return (
@@ -10,11 +9,7 @@ const Component: React.FC = props => {
       </p>
       <p>
         <small>
-          Built with{' '}
-          <Bolt>
-            <FontAwesomeIcon icon="bolt" />
-          </Bolt>{' '}
-          in Tokyo International Airport
+          Departure with<Heart>&#9829;</Heart>in Tokyo International Airport
         </small>
       </p>
     </Footer>
@@ -28,11 +23,10 @@ const Footer = styled.footer`
   color: #666666;
 `
 
-const Bolt = styled.span`
-  color: #ffb000;
-  > svg {
-    font-size: 1.1rem;
-  }
+const Heart = styled.span`
+  color: #eb6ea0;
+  font-size: 1.3rem;
+  padding: 0 2px;
 `
 
 export default Component

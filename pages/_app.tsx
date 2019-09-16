@@ -2,7 +2,7 @@ import React from 'react'
 import App from 'next/app'
 import styled from 'styled-components'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBolt } from '@fortawesome/free-solid-svg-icons'
+// import { faBolt } from '@fortawesome/free-solid-svg-icons'
 import {
   faFacebookSquare,
   faGithubSquare,
@@ -18,13 +18,7 @@ import Header from '../components/global/header'
 import Footer from '../components/global/footer'
 import Category from '../components/global/category'
 
-library.add(
-  faBolt,
-  faFacebookSquare,
-  faTwitterSquare,
-  faInstagram,
-  faGithubSquare
-)
+library.add(faFacebookSquare, faTwitterSquare, faInstagram, faGithubSquare)
 
 class MyApp extends App {
   render() {

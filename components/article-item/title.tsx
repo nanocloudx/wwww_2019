@@ -1,9 +1,14 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../parts/constants'
+import RevealText from '../parts/animaiton/reveal-text'
 
 const Component: React.FC = props => {
-  return <Title>{props.children}</Title>
+  return (
+    <Title>
+      <RevealText>{props.children}</RevealText>
+    </Title>
+  )
 }
 
 const Title = styled.h2`
