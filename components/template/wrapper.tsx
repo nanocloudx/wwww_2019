@@ -7,7 +7,7 @@ import {
   MEDIA_QUERY_DESKTOP,
   MEDIA_QUERY_TABLET,
   MEDIA_TABLET_MIN
-} from '../constants'
+} from '../parts/constants'
 
 const Component: React.FC = props => {
   return <Wrapper>{props.children}</Wrapper>
@@ -21,6 +21,7 @@ const Wrapper = styled.div`
   }
   @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
     width: calc(${MEDIA_DESKTOP_MIN}px - ${HEADER_LARGE_WIDTH}px);
+    padding: 0 30px;
   }
 `
 

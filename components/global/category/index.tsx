@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../../parts/constants'
+import { MEDIA_QUERY_DESKTOP } from '../../parts/constants'
 
 type Props = {
   pathname: string
@@ -10,15 +10,16 @@ const Component: React.FC<Props> = props => {
   // TODO: サブカテゴリを表示する
   const category = props.pathname.split('/')[1] || ''
   const subCategory = props.pathname.split('/')[2] || ''
+
   if (!category) {
     return <></>
   }
   if (!subCategory) {
-    return <Category>{capitalizeFirstLetter(category)}</Category>
+    return <Category>{getCategoryName(category)}</Category>
   }
   return (
     <Category>
-      {capitalizeFirstLetter(category)}
+      {getCategoryName(category)}
       <SubCategory>{capitalizeFirstLetter(subCategory)}</SubCategory>
     </Category>
   )
@@ -28,30 +29,33 @@ function capitalizeFirstLetter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
+function getCategoryName(str) {
+  switch (str) {
+    case 'articles':
+      return 'Articles'
+    case 'about-me':
+      return 'About me'
+    default:
+      return ''
+  }
+}
+
 const Category = styled.h2`
   display: inline-block;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 2.4rem;
   font-weight: bold;
-  margin: 30px 20px 10px;
+  margin: 20px 20px 0;
   padding-right: 50px;
-  border-bottom: 3px solid #333333;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaaaaa;
   &::before {
     content: '>_';
     padding-right: 5px;
     font-size: 1.8rem;
     color: #555555;
   }
-  @media screen and (min-width: ${MEDIA_QUERY_TABLET}px) {
-    font-size: 2.75rem;
-    line-height: 2.75rem;
-    border-bottom: 4px solid #333333;
-  }
   @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
-    font-size: 3rem;
-    line-height: 3rem;
-    margin: 40px 30px 10px;
-    border-bottom: 5px solid #333333;
+    margin: 20px 30px 0;
   }
 `
 

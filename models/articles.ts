@@ -6,11 +6,11 @@ const API = process.env.API_HOST || 'http://localhost:5000'
 export function getArticles(): Promise<Article[]> {
   return Promise.resolve([
     {
-      id: '1',
-      category: 'technology',
+      id: 'example',
+      category: 'development',
       title: 'テストのテストによるテストのためのテスト',
       date: '2019-09-15',
-      tags: ['テスト', 'テクノロジー'],
+      tags: ['テスト', '開発'],
       body:
         'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
     }
@@ -22,11 +22,11 @@ export function getArticles(): Promise<Article[]> {
 
 export function getArticleById(id: string): Promise<Article> {
   return Promise.resolve({
-    id: '1',
-    category: 'technology',
+    id: 'example',
+    category: 'development',
     title: 'テストのテストによるテストのためのテスト',
     date: '2019-09-15',
-    tags: ['テスト', 'テクノロジー'],
+    tags: ['テスト', '開発'],
     body: dummyMarkdown
   })
   // return fetch(`${API}/articles/${id}`).then(res => res.json())

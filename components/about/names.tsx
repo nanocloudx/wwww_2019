@@ -11,12 +11,12 @@ const Component: React.FC = props => {
 }
 
 const Name = styled.h2`
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: bold;
 `
 
 const AlternateName = styled.p`
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-right: 15px;
 `
 

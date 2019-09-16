@@ -23,7 +23,7 @@ const Component: React.FC = props => {
 
 const Footer = styled.footer`
   font-size: 1.1rem;
-  margin: 30px;
+  margin: 40px;
   text-align: center;
   color: #666666;
 `

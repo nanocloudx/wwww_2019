@@ -12,13 +12,13 @@ const Component: React.FC<Props> = props => {
   return (
     <List>
       <Item className={category === 'articles' && 'active'}>
-        <Anchor href="/articles" label="articles">
-          articles
+        <Anchor href="/articles" label="Articles">
+          Articles
         </Anchor>
       </Item>
-      <Item className={category === 'about' && 'active'}>
-        <Anchor href="/about" label="about">
-          about
+      <Item className={category === 'about-me' && 'active'}>
+        <Anchor href="/about-me" label="About me">
+          About me
         </Anchor>
       </Item>
     </List>
@@ -37,13 +37,13 @@ const Item = styled.li`
   &.active {
     &::after {
       position: absolute;
-      top: 25px;
+      top: 30px;
       right: 0;
       content: '';
       display: block;
       width: 5px;
-      height: calc(100% - 15px);
-      background-color: #aaaaaa;
+      height: calc(100% - 25px);
+      background-color: #777777;
       @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
         right: -10px;
       }

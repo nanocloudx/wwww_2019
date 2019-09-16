@@ -1,9 +1,9 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import Wrapper from '../parts/template/wrapper'
+import Wrapper from '../template/wrapper'
 import { Article } from '../../interfaces/article'
 import Title from './title'
-import Meta from './meta'
+import Info from './info'
 import Body from './body'
 
 type Props = {
@@ -15,7 +15,7 @@ const Component: React.FC<Props> = props => {
     <Wrapper>
       <Example>
         <Title>{props.article.title}</Title>
-        <Meta
+        <Info
           id={props.article.id}
           date={props.article.date}
           tags={props.article.tags}

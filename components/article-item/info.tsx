@@ -2,6 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Anchor from '../parts/anchor'
+import { MEDIA_QUERY_DESKTOP } from '../parts/constants'
 
 type Props = {
   id: string
@@ -12,12 +13,12 @@ type Props = {
 const Component: React.FC<Props> = props => {
   return (
     <Info>
-      <Meta>
+      <Tags>
         {props.tags.map(tag => (
           <Tag>{tag}</Tag>
         ))}
-        {props.date}
-      </Meta>
+      </Tags>
+      <Meta>LastUpdate {props.date}</Meta>
       <Socials>
         <Icons>
           <Anchor
@@ -44,27 +45,31 @@ const Component: React.FC<Props> = props => {
 
 const Info = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0;
-  align-items: center;
+  align-items: flex-end;
 `
-const Meta = styled.p`
-  color: #555555;
+const Tags = styled.div`
+  width: 100%;
 `
 const Tag = styled.span`
   font-size: 1.5rem;
   margin-right: 10px;
   color: #ffffff;
-  background-color: #222222;
+  background-color: #333333;
   padding: 2px 6px;
+`
+const Meta = styled.p`
+  color: #555555;
+`
+const Socials = styled.div`
+  display: flex;
 `
 const Icons = styled.div`
   font-size: 3rem;
   line-height: 3rem;
   margin-right: 10px;
-`
-const Socials = styled.div`
-  display: flex;
 `
 
 export default Component

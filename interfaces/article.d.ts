@@ -1,6 +1,6 @@
 export type Article = {
   id: string
-  category: 'technology' | 'travel' | 'diary'
+  category: 'development' | 'travel' | 'diary'
   title: string
   date: string
   tags: string[]

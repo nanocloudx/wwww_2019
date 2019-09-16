@@ -9,14 +9,14 @@ const Component: React.FC = props => {
 const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: bold;
-  margin: 50px 0;
+  margin: 60px 0;
   @media screen and (min-width: ${MEDIA_QUERY_TABLET}px) {
     font-size: 3rem;
-    margin: 60px 0;
+    margin: 70px 0;
   }
   @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
     font-size: 3.5rem;
-    margin: 70px 0;
+    margin: 80px 0;
   }
 `
 

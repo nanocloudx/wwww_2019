@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Wrapper from '../parts/template/wrapper'
+import Wrapper from '../template/wrapper'
 import Anchor from '../parts/anchor'
 import { Article } from '../../interfaces/article'
 
