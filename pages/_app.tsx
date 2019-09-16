@@ -17,6 +17,7 @@ import {
 } from '../components/common/constants'
 import Header from '../components/template/header'
 import Footer from '../components/template/footer'
+import Category from '../components/template/category'
 
 library.add(
   faBolt,
@@ -28,13 +29,14 @@ library.add(
 
 class MyApp extends App {
   render() {
-    const { Component, pageProps } = this.props
+    const { Component, pageProps, router } = this.props
     return (
       <>
         <Side>
           <Header />
         </Side>
         <Main>
+          <Category pathname={router.pathname} />
           <Component {...pageProps} />
           <Footer />
         </Main>

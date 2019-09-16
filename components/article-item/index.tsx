@@ -2,6 +2,8 @@ import * as React from 'react'
 import styled from 'styled-components'
 import Wrapper from '../common/wrapper'
 import { Article } from '../../interfaces/article'
+import Title from './title'
+import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../common/constants'
 
 type Props = {
   article: Article
@@ -10,13 +12,15 @@ type Props = {
 const Component: React.FC<Props> = props => {
   return (
     <Wrapper>
-      <div>
-        <h3>{props.article.title}</h3>
+      <Example>
+        <Title>{props.article.title}</Title>
         <p>{props.article.date}</p>
         <p>{props.article.body}</p>
-      </div>
+      </Example>
     </Wrapper>
   )
 }
+
+const Example = styled.div``
 
 export default Component

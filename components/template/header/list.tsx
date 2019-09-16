@@ -6,11 +6,6 @@ const Component: React.FC = props => {
   return (
     <List>
       <Item>
-        <Anchor href="/" label="index">
-          index
-        </Anchor>
-      </Item>
-      <Item>
         <Anchor href="/about" label="about">
           about
         </Anchor>

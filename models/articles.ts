@@ -7,9 +7,10 @@ export function getArticles(): Promise<Article[]> {
   return Promise.resolve([
     {
       id: '1',
-      title: 'テスト',
+      title: 'テストのテストによるテストのためのテスト',
       date: '2019-12-31',
-      body: 'これはテストですこれはテストですこれはテストです'
+      body:
+        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
     }
   ])
   // return fetch(`${API}/articles`)
@@ -20,9 +21,10 @@ export function getArticles(): Promise<Article[]> {
 export function getArticleById(id: string): Promise<Article> {
   return Promise.resolve({
     id: '1',
-    title: 'テスト',
+    title: 'テストのテストによるテストのためのテスト',
     date: '2019-12-31',
-    body: 'これはテストですこれはテストですこれはテストです'
+    body:
+      'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
   })
   // return fetch(`${API}/articles/${id}`).then(res => res.json())
 }
