@@ -38,7 +38,7 @@ export default class MainDocument extends Document {
           />
           <link rel="manifest" href="/static/manifest.json" />
           <link rel="stylesheet" href="/static/styles/style.css" />
-          <meta name="theme-color" content="#222222" />
+          <meta name="theme-color" content="#333333" />
         </Head>
         <body>
           <Main />
