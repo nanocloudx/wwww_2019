@@ -30,11 +30,12 @@ footer, header, hgroup, main, menu, nav, section {
 }
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 body {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.4;
-    font-family: Roboto, Arial, YuGothic, "Yu Gothic", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Arial, Meiryo, sans-serif;
     color: #333333;
 }
 ol, ul {

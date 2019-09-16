@@ -29,13 +29,14 @@ library.add(
 class MyApp extends App {
   render() {
     const { Component, pageProps, router } = this.props
+    console.log(router)
     return (
       <>
         <Side>
-          <Header pathname={router.pathname} />
+          <Header pathname={router.asPath} />
         </Side>
         <Main>
-          <Category pathname={router.pathname} />
+          <Category pathname={router.asPath} />
           <Component {...pageProps} />
           <Footer />
         </Main>

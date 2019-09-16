@@ -11,9 +11,11 @@ const Component: React.FC<Props> = props => {
   return (
     <Wrapper>
       <div>
-        <h2>Articles</h2>
         {props.articles.map(article => (
-          <Anchor href={`/articles/${article.id}`} label={article.title}>
+          <Anchor
+            href={`/articles/${article.category}/${article.id}`}
+            label={article.title}
+          >
             <div>
               <h3>{article.title}</h3>
               <p>{article.date}</p>

@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import View from '../../components/article-item'
-import { getArticleById } from '../../models/articles'
-import { Article } from '../../interfaces/article'
+import View from '../../../components/article-item'
+import { getArticleById } from '../../../models/articles'
+import { Article } from '../../../interfaces/article'
 
 type Props = {
   article: Article

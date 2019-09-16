@@ -22,7 +22,7 @@ const Works = styled.div`
   margin: 20px 0;
 `
 const Occupation = styled.h3`
-  font-size: 1.8rem;
+  font-size: 2rem;
 `
 
 export default Component

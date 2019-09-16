@@ -11,11 +11,11 @@ const Component: React.FC<Props> = props => {
   const category = props.pathname.split('/')[1] || ''
   return (
     <List>
-      {/*<Item className={category === 'articles' && 'active'}>*/}
-      {/*  <Anchor href="/articles" label="articles">*/}
-      {/*    articles*/}
-      {/*  </Anchor>*/}
-      {/*</Item>*/}
+      <Item className={category === 'articles' && 'active'}>
+        <Anchor href="/articles" label="articles">
+          articles
+        </Anchor>
+      </Item>
       <Item className={category === 'about' && 'active'}>
         <Anchor href="/about" label="about">
           about

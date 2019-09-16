@@ -7,11 +7,21 @@ type Props = {
 }
 
 const Component: React.FC<Props> = props => {
+  // TODO: サブカテゴリを表示する
   const category = props.pathname.split('/')[1] || ''
+  const subCategory = props.pathname.split('/')[2] || ''
   if (!category) {
     return <></>
   }
-  return <Category>{capitalizeFirstLetter(category)}</Category>
+  if (!subCategory) {
+    return <Category>{capitalizeFirstLetter(category)}</Category>
+  }
+  return (
+    <Category>
+      {capitalizeFirstLetter(category)}
+      <SubCategory>{capitalizeFirstLetter(subCategory)}</SubCategory>
+    </Category>
+  )
 }
 
 function capitalizeFirstLetter(str) {
@@ -29,7 +39,7 @@ const Category = styled.h2`
   &::before {
     content: '>_';
     padding-right: 5px;
-    font-size: 50%;
+    font-size: 1.8rem;
     color: #555555;
   }
   @media screen and (min-width: ${MEDIA_QUERY_TABLET}px) {
@@ -42,6 +52,15 @@ const Category = styled.h2`
     line-height: 3rem;
     margin: 40px 30px 10px;
     border-bottom: 5px solid #333333;
+  }
+`
+
+const SubCategory = styled.span`
+  font-size: 1.8rem;
+  color: #555555;
+  &::before {
+    content: '+';
+    padding: 0 5px;
   }
 `
 
