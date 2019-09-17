@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { MEDIA_QUERY_DESKTOP } from '../../parts/constants'
+import { MEDIA_QUERY_DESKTOP } from '../../constants'
 
 type Props = {
   pathname: string

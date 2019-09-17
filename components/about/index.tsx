@@ -9,7 +9,7 @@ import Socials from './socials'
 import Works from './works'
 import Likes from './likes'
 import Contacts from './contacts'
-import { MEDIA_QUERY_TABLET } from '../parts/constants'
+import { MEDIA_QUERY_TABLET } from '../constants'
 
 const Component: React.FC = props => {
   return (

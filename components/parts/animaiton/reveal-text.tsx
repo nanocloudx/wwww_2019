@@ -7,13 +7,13 @@ const Component: React.FC = props => {
 
 const RevealText = styled.span`
   display: inline-block;
-  animation-delay: 0.5s;
+  animation-delay: 0.2s;
   animation-iteration-count: 1;
   animation-duration: 0.8s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   &::after {
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
     animation-iteration-count: 1;
     animation-duration: 0.8s;
     animation-fill-mode: both;

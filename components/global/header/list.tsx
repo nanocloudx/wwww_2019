@@ -1,7 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Anchor from '../../parts/anchor'
-import { MEDIA_QUERY_DESKTOP } from '../../parts/constants'
+import {
+  HEADER_LARGE_WIDTH,
+  HEADER_SMALL_WIDTH,
+  MEDIA_QUERY_DESKTOP
+} from '../../constants'
 
 type Props = {
   pathname: string
@@ -32,9 +36,13 @@ const List = styled.ul`
 
 const Item = styled.li`
   display: flex;
-  font-size: 1.8rem;
-  line-height: 5rem;
+  font-size: 1.6rem;
+  line-height: ${HEADER_SMALL_WIDTH}px;
   position: relative;
+  @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
+    font-size: 1.8rem;
+    line-height: ${HEADER_LARGE_WIDTH}px;
+  }
   &.active {
     &::after {
       position: absolute;
@@ -42,12 +50,9 @@ const Item = styled.li`
       right: 0;
       content: '';
       display: block;
-      width: 5px;
+      width: 4px;
       height: calc(100% - 25px);
       background-color: #777777;
-      @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
-        right: -10px;
-      }
     }
   }
   &::before {

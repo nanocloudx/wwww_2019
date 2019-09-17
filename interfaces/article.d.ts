@@ -4,5 +4,6 @@ export type Article = {
   title: string
   date: string
   tags: string[]
+  image: string
   body: string
 }

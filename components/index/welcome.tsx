@@ -2,7 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import Strong from '../parts/strong'
 import RevealText from '../parts/animaiton/reveal-text'
-import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../parts/constants'
+import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../constants'
 
 const Component: React.FC = props => {
   return (

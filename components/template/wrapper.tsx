@@ -7,7 +7,7 @@ import {
   MEDIA_QUERY_DESKTOP,
   MEDIA_QUERY_TABLET,
   MEDIA_TABLET_MIN
-} from '../parts/constants'
+} from '../constants'
 
 const Component: React.FC = props => {
   return <Wrapper>{props.children}</Wrapper>

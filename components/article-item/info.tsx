@@ -46,14 +46,14 @@ const Info = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0;
   align-items: flex-end;
+  font-size: 1.6rem;
 `
 const Tags = styled.div`
   width: 100%;
 `
 const Tag = styled.span`
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-right: 10px;
   color: #ffffff;
   background-color: #333333;
@@ -66,8 +66,8 @@ const Socials = styled.div`
   display: flex;
 `
 const Icons = styled.div`
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
   margin-right: 10px;
 `
 

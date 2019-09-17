@@ -6,7 +6,7 @@ import {
   HEADER_LARGE_WIDTH,
   HEADER_SMALL_WIDTH,
   MEDIA_QUERY_DESKTOP
-} from '../../parts/constants'
+} from '../../constants'
 
 type Props = {
   pathname: string

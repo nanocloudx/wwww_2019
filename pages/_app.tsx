@@ -13,7 +13,7 @@ import {
   HEADER_LARGE_WIDTH,
   HEADER_SMALL_WIDTH,
   MEDIA_QUERY_DESKTOP
-} from '../components/parts/constants'
+} from '../components/constants'
 import Header from '../components/global/header'
 import Footer from '../components/global/footer'
 import Category from '../components/global/category'
