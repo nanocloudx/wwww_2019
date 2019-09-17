@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Wrapper from '../template/wrapper'
 import Anchor from '../parts/anchor'
 import { Article } from '../../interfaces/article'
-import { MEDIA_QUERY_TABLET } from '../constants'
+import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../constants'
 
 type Props = {
   articles: Article[]
@@ -11,43 +11,46 @@ type Props = {
 
 const Component: React.FC<Props> = props => {
   return (
-    <Wrapper>
-      <ArticleList>
-        {props.articles.map(article => (
-          <ArticleItem>
-            <Anchor
-              key={article.id}
-              href={`/articles/${article.category}/${article.id}`}
-              label={article.title}
-            >
-              <Image src={article.image} />
-              <Title>{article.title}</Title>
-              <Date>{article.date}</Date>
-              <Tags>
-                {article.tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))}
-              </Tags>
-            </Anchor>
-          </ArticleItem>
-        ))}
-      </ArticleList>
-    </Wrapper>
+    <ArticleList>
+      {props.articles.map(article => (
+        <ArticleItem>
+          <Anchor
+            key={article.id}
+            href={`/articles/${article.category}/${article.id}`}
+            label={article.title}
+          >
+            <Image src={article.image} />
+            <Title>{article.title}</Title>
+            <Date>{article.date}</Date>
+            <Tags>
+              {article.tags.map((tag, i) => (
+                <Tag key={i}>{tag}</Tag>
+              ))}
+            </Tags>
+          </Anchor>
+        </ArticleItem>
+      ))}
+    </ArticleList>
   )
 }
 
 const ArticleList = styled.div`
-  margin: 30px 0;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
+    justify-content: left;
+  }
 `
 const ArticleItem = styled.div`
   cursor: pointer;
   width: 100%;
-  margin-bottom: 30px;
+  padding: 10px;
   @media screen and (min-width: ${MEDIA_QUERY_TABLET}px) {
-    max-width: 300px;
+    max-width: 285px;
   }
 `
 const Image = styled.img`
