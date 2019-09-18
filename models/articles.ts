@@ -14,96 +14,6 @@ export function getArticles(): Promise<Article[]> {
       image: '/static/images/example.jpg',
       body:
         'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
-    },
-    {
-      id: 'example',
-      category: 'development',
-      title: 'テストのテストによるテストのためのテスト',
-      date: '2019-09-15',
-      tags: ['テスト', '開発'],
-      image: '/static/images/example.jpg',
-      body:
-        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
-    },
-    {
-      id: 'example',
-      category: 'development',
-      title: 'テストのテストによるテストのためのテスト',
-      date: '2019-09-15',
-      tags: ['テスト', '開発'],
-      image: '/static/images/example.jpg',
-      body:
-        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
-    },
-    {
-      id: 'example',
-      category: 'development',
-      title: 'テストのテストによるテストのためのテスト',
-      date: '2019-09-15',
-      tags: ['テスト', '開発'],
-      image: '/static/images/example.jpg',
-      body:
-        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
-    },
-    {
-      id: 'example',
-      category: 'development',
-      title: 'テストのテストによるテストのためのテスト',
-      date: '2019-09-15',
-      tags: ['テスト', '開発'],
-      image: '/static/images/example.jpg',
-      body:
-        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
-    },
-    {
-      id: 'example',
-      category: 'development',
-      title: 'テストのテストによるテストのためのテスト',
-      date: '2019-09-15',
-      tags: ['テスト', '開発'],
-      image: '/static/images/example.jpg',
-      body:
-        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
-    },
-    {
-      id: 'example',
-      category: 'development',
-      title: 'テストのテストによるテストのためのテスト',
-      date: '2019-09-15',
-      tags: ['テスト', '開発'],
-      image: '/static/images/example.jpg',
-      body:
-        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
-    },
-    {
-      id: 'example',
-      category: 'development',
-      title: 'テストのテストによるテストのためのテスト',
-      date: '2019-09-15',
-      tags: ['テスト', '開発'],
-      image: '/static/images/example.jpg',
-      body:
-        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
-    },
-    {
-      id: 'example',
-      category: 'development',
-      title: 'テストのテストによるテストのためのテスト',
-      date: '2019-09-15',
-      tags: ['テスト', '開発'],
-      image: '/static/images/example.jpg',
-      body:
-        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
-    },
-    {
-      id: 'example',
-      category: 'development',
-      title: 'テストのテストによるテストのためのテスト',
-      date: '2019-09-15',
-      tags: ['テスト', '開発'],
-      image: '/static/images/example.jpg',
-      body:
-        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
     }
   ])
   // return fetch(`${API}/articles`)
@@ -134,8 +44,6 @@ const dummyMarkdown = `
 あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
 
 またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。では、わたくしはいつかの小さなみだしをつけながら、しずかにあの年のイーハトーヴォの五月から十月までを書きつけましょう。
-
-![large image](https://dummyimage.com/1280x720/87cefa/fff.jpg&text=exampleImage)
 
 ---
 

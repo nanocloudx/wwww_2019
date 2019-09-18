@@ -2,7 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import Anchor from '../parts/anchor'
 import { Article } from '../../interfaces/article'
-import {MEDIA_QUERY_TABLET} from '../constants'
+import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../constants'
 
 type Props = {
   article: Article
@@ -34,28 +34,39 @@ const Component: React.FC<Props> = props => {
 }
 
 const ArticleItem = styled.div`
-  margin-bottom: 20px;
   @media screen and (min-width: ${MEDIA_QUERY_TABLET}px) {
     display: flex;
   }
 `
 
 const ArticleItemContent = styled.div`
-  //padding: 10px;
+  //margin: 10px 0;
 `
 
 const Image = styled.img`
   width: 100%;
   height: auto;
+  display: block;
+  margin-bottom: 10px;
   @media screen and (min-width: ${MEDIA_QUERY_TABLET}px) {
     max-width: 180px;
     margin-right: 15px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
+    max-width: 220px;
   }
 `
 
 const Title = styled.h3`
   font-size: 1.8rem;
   font-weight: bold;
+  @media screen and (min-width: ${MEDIA_QUERY_TABLET}px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
+    font-size: 2.2rem;
+  }
 `
 
 const Date = styled.p`

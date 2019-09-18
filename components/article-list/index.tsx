@@ -1,8 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import TwoColumn from '../template/two-column'
 import { Article } from '../../interfaces/article'
-import Featured from './featured'
 import Latest from './latest'
 
 type Props = {
@@ -11,16 +9,10 @@ type Props = {
 
 const Component: React.FC<Props> = props => {
   return (
-    <TwoColumnR>
-      <Featured articles={props.articles} />
+    <div>
       <Latest articles={props.articles} />
-    </TwoColumnR>
+    </div>
   )
 }
-
-const TwoColumnR = styled(TwoColumn)`
-  flex-direction: row-reverse;
-  justify-content: space-between;
-`
 
 export default Component

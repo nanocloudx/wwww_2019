@@ -1,8 +1,8 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import Wrapper from '../template/wrapper'
 import LatestItem from './latest-item'
 import { Article } from '../../interfaces/article'
-import {MEDIA_QUERY_DESKTOP} from '../constants'
 
 type Props = {
   articles: Article[]
@@ -10,19 +10,23 @@ type Props = {
 
 const Component: React.FC<Props> = props => {
   return (
-    <ArticleList>
-      {props.articles.map(article => (
-        <LatestItem article={article} />
-      ))}
-    </ArticleList>
+    <Wrapper>
+      <div>
+        {props.articles.map(article => (
+          <>
+            <LatestItem article={article} />
+            <Hr />
+          </>
+        ))}
+      </div>
+    </Wrapper>
   )
 }
 
-const ArticleList = styled.div`
-  padding: 20px;
-  @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
-    // width: 70%;
-  }
+const Hr = styled.hr`
+  margin: 20px -20px;
+  border: none;
+  border-bottom: 1px solid #dddddd;
 `
 
 export default Component
