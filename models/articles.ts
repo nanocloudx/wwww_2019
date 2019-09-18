@@ -14,6 +14,96 @@ export function getArticles(): Promise<Article[]> {
       image: '/static/images/example.jpg',
       body:
         'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
+    },
+    {
+      id: 'example',
+      category: 'development',
+      title: 'テストのテストによるテストのためのテスト',
+      date: '2019-09-15',
+      tags: ['テスト', '開発'],
+      image: '/static/images/example.jpg',
+      body:
+        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
+    },
+    {
+      id: 'example',
+      category: 'development',
+      title: 'テストのテストによるテストのためのテスト',
+      date: '2019-09-15',
+      tags: ['テスト', '開発'],
+      image: '/static/images/example.jpg',
+      body:
+        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
+    },
+    {
+      id: 'example',
+      category: 'development',
+      title: 'テストのテストによるテストのためのテスト',
+      date: '2019-09-15',
+      tags: ['テスト', '開発'],
+      image: '/static/images/example.jpg',
+      body:
+        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
+    },
+    {
+      id: 'example',
+      category: 'development',
+      title: 'テストのテストによるテストのためのテスト',
+      date: '2019-09-15',
+      tags: ['テスト', '開発'],
+      image: '/static/images/example.jpg',
+      body:
+        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
+    },
+    {
+      id: 'example',
+      category: 'development',
+      title: 'テストのテストによるテストのためのテスト',
+      date: '2019-09-15',
+      tags: ['テスト', '開発'],
+      image: '/static/images/example.jpg',
+      body:
+        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
+    },
+    {
+      id: 'example',
+      category: 'development',
+      title: 'テストのテストによるテストのためのテスト',
+      date: '2019-09-15',
+      tags: ['テスト', '開発'],
+      image: '/static/images/example.jpg',
+      body:
+        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
+    },
+    {
+      id: 'example',
+      category: 'development',
+      title: 'テストのテストによるテストのためのテスト',
+      date: '2019-09-15',
+      tags: ['テスト', '開発'],
+      image: '/static/images/example.jpg',
+      body:
+        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
+    },
+    {
+      id: 'example',
+      category: 'development',
+      title: 'テストのテストによるテストのためのテスト',
+      date: '2019-09-15',
+      tags: ['テスト', '開発'],
+      image: '/static/images/example.jpg',
+      body:
+        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
+    },
+    {
+      id: 'example',
+      category: 'development',
+      title: 'テストのテストによるテストのためのテスト',
+      date: '2019-09-15',
+      tags: ['テスト', '開発'],
+      image: '/static/images/example.jpg',
+      body:
+        'これはテストですこれはテストですこれはテストですこれはテストですこれはテストですこれはテストです'
     }
   ])
   // return fetch(`${API}/articles`)
