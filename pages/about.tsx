@@ -14,7 +14,7 @@ class Page extends React.Component<Props> {
     return (
       <>
         <Head>
-          <title>About | wwww.dev</title>
+          <title>About me | wwww.dev</title>
           <meta name="Description" content="wwww.dev" />
         </Head>
         <View />

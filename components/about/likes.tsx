@@ -10,7 +10,7 @@ const Component: React.FC = props => {
       <dl>
         <LikeItem>
           <dt>Travel</dt>
-          <dd>Flew 66,209+ miles</dd>
+          <dd>Flew 62,729+ miles</dd>
           <dd className="note">
             <Note>
               Went: California, NewYork, Singapole, Melbourne, Venezia, Manila,
@@ -31,9 +31,7 @@ const Component: React.FC = props => {
           <dt>Videography</dt>
           <dd>Graduated from school of shooting film</dd>
           <dd className="note">
-            <Note>
-              Use: Sony alpha 7III / Vario-Tessar T* FE 16-35mm F4 ZA OSS
-            </Note>
+            <Note>Use: Sony alpha 7III</Note>
           </dd>
         </LikeItem>
         <LikeItem>
@@ -48,9 +46,9 @@ const Component: React.FC = props => {
         </LikeItem>
         <LikeItem>
           <dt>Golf</dt>
-          <dd>Score 180+</dd>
+          <dd>Score 140+</dd>
           <dd className="note">
-            <Note>Terribly bad... but I like it!</Note>
+            <Note>Bad... but I like it!</Note>
           </dd>
         </LikeItem>
         <LikeItem>

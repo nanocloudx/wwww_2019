@@ -33,7 +33,7 @@ function getCategoryName(str) {
   switch (str) {
     case 'articles':
       return 'Articles'
-    case 'about-me':
+    case 'about':
       return 'About me'
     default:
       return ''

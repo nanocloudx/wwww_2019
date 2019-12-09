@@ -5,11 +5,11 @@ const Component: React.FC = props => {
   return (
     <Footer>
       <p>
-        <small>&copy; 2019 nanocloudx</small>
+        <small>&copy; nanocloudx</small>
       </p>
       <p>
         <small>
-          Departure with<Heart>&#9829;</Heart>in Tokyo International Airport
+          Made with<Heart>&#9829;</Heart>in Akihabara
         </small>
       </p>
     </Footer>

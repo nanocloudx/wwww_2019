@@ -16,13 +16,13 @@ const Component: React.FC<Props> = props => {
   const category = paths[1] || ''
   return (
     <List>
-      <Item className={category === 'articles' && 'active'}>
-        <Anchor href="/articles" label="Articles">
-          Articles
-        </Anchor>
-      </Item>
-      <Item className={category === 'about-me' && 'active'}>
-        <Anchor href="/about-me" label="About me">
+      {/*<Item className={category === 'articles' && 'active'}>*/}
+      {/*  <Anchor href="/articles" label="Articles">*/}
+      {/*    Articles*/}
+      {/*  </Anchor>*/}
+      {/*</Item>*/}
+      <Item className={category === 'about' && 'active'}>
+        <Anchor href="/about" label="About me">
           About me
         </Anchor>
       </Item>

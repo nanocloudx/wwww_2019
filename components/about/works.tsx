@@ -11,7 +11,10 @@ const Component: React.FC = props => {
         etc...
       </p>
       <p>
-        Worked at DeNA <Note>(2017 - present)</Note> and DWANGO{' '}
+        Worked at ABEJA <Note>(2020 - present)</Note>
+      </p>
+      <p>
+        -- Past DeNA <Note>(2017 - 2019)</Note> and DWANGO{' '}
         <Note>(2012 - 2017)</Note>
       </p>
     </Works>

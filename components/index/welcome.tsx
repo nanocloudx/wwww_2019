@@ -6,17 +6,23 @@ import { MEDIA_QUERY_DESKTOP, MEDIA_QUERY_TABLET } from '../constants'
 
 const Component: React.FC = props => {
   return (
-    <Message>
-      Hi!
-      <br />
-      You've reached the
-      <br />
-      <Strong>End of the Internet</Strong>.<br />
-      <RevealText>wwww.dev</RevealText>
-    </Message>
+    <Wrapper>
+      <Message>
+        Hi!
+        <br />
+        You've reached the
+        <br />
+        <Strong>End of the Internet</Strong>.<br />
+        <RevealText>wwww.dev</RevealText>
+      </Message>
+    </Wrapper>
   )
 }
 
+const Wrapper = styled.div`
+  margin: 0 auto;
+  max-width: 1100px;
+`
 const Message = styled.p`
   padding: 10px;
   cursor: default;
