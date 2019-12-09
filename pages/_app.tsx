@@ -1,8 +1,9 @@
 import React from 'react'
 import App from 'next/app'
+import Router from 'next/router'
+import withGA from 'next-ga'
 import styled from 'styled-components'
 import { library } from '@fortawesome/fontawesome-svg-core'
-// import { faBolt } from '@fortawesome/free-solid-svg-icons'
 import {
   faFacebookSquare,
   faGithubSquare,
@@ -52,4 +53,4 @@ const Main = styled.div`
   }
 `
 
-export default MyApp
+export default withGA('UA-82809079-7', Router)(MyApp)
