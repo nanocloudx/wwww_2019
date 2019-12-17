@@ -31,6 +31,18 @@ const Header = styled.header`
   @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
     width: ${HEADER_LARGE_WIDTH}px;
   }
+  &::before {
+    background: linear-gradient(to bottom, #9e7cc1, #8ecdea);
+    content: '';
+    height: 100vh;
+    position: fixed;
+    width: 3px;
+    left: ${HEADER_SMALL_WIDTH}px;
+    @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
+      width: 5px;
+      left: ${HEADER_LARGE_WIDTH}px;
+    }
+  }
 `
 
 const Navigation = styled.nav`

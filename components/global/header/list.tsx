@@ -47,12 +47,16 @@ const Item = styled.li`
     &::after {
       position: absolute;
       top: 30px;
-      right: 0;
       content: '';
       display: block;
-      width: 4px;
       height: calc(100% - 25px);
-      background-color: #777777;
+      background-color: rgba(255, 255, 255, 0.8);
+      right: -3px;
+      width: 6px;
+      @media screen and (min-width: ${MEDIA_QUERY_DESKTOP}px) {
+        right: -5px;
+        width: 10px;
+      }
     }
   }
   &::before {

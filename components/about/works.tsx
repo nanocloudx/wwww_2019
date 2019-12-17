@@ -6,10 +6,7 @@ const Component: React.FC = props => {
   return (
     <Works>
       <Occupation>Web Developer</Occupation>
-      <p>
-        TypeScript, React.js, Vue.js, Node.js, Redis, Firebase, Kubernetes,
-        etc...
-      </p>
+      <p>TypeScript, React.js, Vue.js, Node.js, Redis, GCP, Firebase, etc...</p>
       <p>
         Worked at ABEJA <Note>(2020 - present)</Note>
       </p>
